@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="简单柱状图"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:id="@+id/tv_title"
+            />
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一班"
+                android:textSize="20sp"
+                android:textColor="#f00"
+                android:visibility="gone"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                />
+
+        <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二班"
+                android:textSize="20sp"
+                android:textColor="#00f"
+                android:visibility="gone"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="45dp"
+                />
+        <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三班"
+                android:textSize="20sp"
+                android:textColor="#9983CC39"
+                android:visibility="gone"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="70dp"
+                />
+
+        <com.lwz.chart.hellocharts.view.ColumnChartView
+                android:id="@+id/columnChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+    </RelativeLayout>
+</LinearLayout>
+
